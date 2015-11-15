@@ -3,5 +3,5 @@
 
 # install
 ```
-git clone http://github.com/khw7096/vimset.git ~/vimset && sh ~/vimset/install.sh
+git clone https://github.com/khw7096/vimset.git ~/vimset && sh ~/vimset/install.sh
 ```
