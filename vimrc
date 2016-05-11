@@ -153,7 +153,7 @@ autocmd Syntax c,cpp set tabstop=2
 "map <F7> :w <CR> :!g++ % -w -lGL -lGLU -lglut -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer -o %< && ./%<<CR>
 map <F8> :w <CR> :!python ./% <CR>
 "map <F9> :w <CR> :!gcc % -Wall -lm -lGL -GLU -lglut -std=c99 -lSDL -o %< && ./%< <CR>
-map <F9> :w <CR> :!go run ./% <CR>
+map <F9> :w <CR> :!gofmt -w ./% <CR> :e <CR> :!go run ./% <CR>
 "map <F10> :w <CR> :!clisp ./% <CR>
 map <F10> :w <CR> :!/usr/bin/xcrun swift ./% <CR>
 map <F5> <Esc>I#<Esc><Esc>
