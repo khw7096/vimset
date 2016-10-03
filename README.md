@@ -4,6 +4,7 @@
 # install
 ```
 cd ~ && git clone https://github.com/khw7096/vimset.git && sh ~/vimset/install.sh
+go get golang.org/x/tools/cmd/goimports
 ```
 
 # Hotkey

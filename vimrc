@@ -76,26 +76,18 @@ set t_Co=256			" terminal color 256
 set nu					" uses line-number 
 set laststatus=2		" status 라인이 어떻게 나오게 할 지 지정
 set statusline=%<%F%h%m%r%h%w%y\ %{strftime(\"%Y-%m-%d\ %H:%M\")}%=\ [line\ %l:%c\ col]\ %ob\ %L\ %P
-"set visualbell       " 키를 잘 못 눌렀을 때 삑 소리 대신 화면이 번쩍이게 변경
-
-
 
 "=== Color ===
 colorscheme jellybeans
-
 
 "=== Syntax Highlighting ===
 syntax on	
 filetype indent plugin on
 
-
 "=== Plugin Options ==
 filetype plugin on  " for c.vim
-
 let Tlist_Use_Right_Window = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
-
-
 
 "=== Command ===
 "## 영역이 지정된 상태에서 Tab과 Shift-Tab 으로 들여쓰기/내어쓰기
@@ -120,15 +112,8 @@ map ,6 :b!6<CR>
 map ,7 :b!7<CR>
 map ,8 :b!8<CR>
 
-
 " == CSCOPE ==
-"if filereadable("./cscope.out")
-"	cs add cscope.out
-"endif
-"
 set tags=./tags;/		" 상위로 올라가면서 tags 찾기 
-"map <C-[> :vsp <cr>:exe 'tj' expand('<cword>')<CR>
-"위 커맨드 vim에서 충돌남
 
 " Include Find Paths
 set path=.,,..,../..,./*,./*/*,../*,~/,~/**,/usr/include/*
@@ -147,11 +132,11 @@ autocmd Syntax python normal zR
 " Coding Convension ==
 autocmd Syntax c,cpp set expandtab
 autocmd Syntax c,cpp set tabstop=2
-"autocmd Syntax c,cpp set shiftwidth=2
 
 "go 파일 저장시 자동으로 go 코드 수정.
-au BufWritePost *.go !gofmt -w %
-
+"자동갱신이 되지 않는다. :e 라고 타이핑하기.
+autocmd BufWritePost *.go !gofmt -w %
+autocmd BufWritePost *.go !goimports -w %
 
 map <F8> :w <CR> :!python ./% <CR>
 map <F9> :w <CR> :!gofmt -w ./% <CR> :e <CR> :!go run ./% <CR>
