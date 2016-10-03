@@ -149,6 +149,9 @@ autocmd Syntax c,cpp set expandtab
 autocmd Syntax c,cpp set tabstop=2
 "autocmd Syntax c,cpp set shiftwidth=2
 
+"go 파일 저장시 자동으로 go 코드 수정.
+au BufWritePost *.go !gofmt -w %
+
 
 map <F8> :w <CR> :!python ./% <CR>
 map <F9> :w <CR> :!gofmt -w ./% <CR> :e <CR> :!go run ./% <CR>
