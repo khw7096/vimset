@@ -12,4 +12,5 @@ cd ~ && git clone https://github.com/khw7096/vimset.git && sh ~/vimset/install.s
 
 #### 개발서포트툴
 - dia : http://dia-installer.de
--  vim-go : https://github.com/fatih/vim-go
+- vim-go : https://github.com/fatih/vim-go
+- jellybeans : https://github.com/nanotech/jellybeans.vim
