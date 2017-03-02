@@ -77,9 +77,6 @@ set nu					" uses line-number
 set laststatus=2		" status 라인이 어떻게 나오게 할 지 지정
 set statusline=%<%F%h%m%r%h%w%y\ %{strftime(\"%Y-%m-%d\ %H:%M\")}%=\ [line\ %l:%c\ col]\ %ob\ %L\ %P
 
-"=== Color ===
-colorscheme jellybeans
-
 "=== Syntax Highlighting ===
 syntax on	
 filetype indent plugin on
