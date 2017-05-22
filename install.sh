@@ -11,4 +11,4 @@ cp -rf vimrc ~/.vimrc
 if [ ! -d ~/.vim/colors ]; then
 	mkdir ~/.vim/colors
 fi
-cp colors/jellybeans.vim ~/.vim/colors
+cp ./colors/jellybeans.vim ~/.vim/colors
