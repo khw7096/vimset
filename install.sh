@@ -5,7 +5,7 @@ git clone https://github.com/fatih/vim-go.git
 mv ~/vim-go ~/.vim
 
 # 개인셋팅 추가
-cp -rf vimrc ~/.vimrc
+cp -f vimrc ~/.vimrc
 
 # 젤리빈 컬러를 설정
 if [ ! -d ~/.vim/colors ]; then
