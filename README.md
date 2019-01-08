@@ -3,7 +3,7 @@
 
 ##### install
 ```
-cd ~ && git clone https://github.com/khw7096/vimset.git && cd vimset && sh install.sh
+cd ~ && git clone https://github.com/khw7096/vimset.git && cd vimset && sh install.sh && rm -rf ~/vimset
 ```
 
 #### Hotkey
