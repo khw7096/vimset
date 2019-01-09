@@ -13,6 +13,7 @@ set ignorecase				 " Case insensitive matching.
 set hlsearch				 " Highlight search matches.
 set bs=indent,eol,start  " BS로 라인끝과 처음 자동들여쓰기한 부분을 지날 수 있음
 set ru                   " show curor always
+set vb
 
 "=== encoding ===
 if has("unix")
