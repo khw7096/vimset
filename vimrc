@@ -33,7 +33,6 @@ set smartindent
 set noet			" 탭 공백 변환 사용안함
 set sts=0			" 탭 공백 변환 사용안함
 set nowrap
-set showmatch		" 닫는 입력시 매칭되는 여는 괄호에 잠시 커서가 위치했다가 다시 제자리로 돌아 온다.
 set cursorline      " 커서 라인
 
 "=== Search ===
